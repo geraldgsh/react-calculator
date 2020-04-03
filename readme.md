@@ -176,7 +176,7 @@ Install ESlint with following command
 
    - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
 
-   ![screenshot](https://github.com/microverseinc/linters-config/blob/master/assets/images/stickler_app_config.png)
+   ![screenshot](../assets/images/stickler_app_config.png)
 
    - Try to add a new commit to your Pull Request. Stickler should detect changes in your repo and start checking your code.
 
@@ -199,7 +199,7 @@ Install ESlint with following command
 Checkout our [wikipage](https://github.com/geraldgsh/react-calculator/wiki) for more details. 
 
 #### Live Demo
-[Demo](https://react-calculate.herokuapp.com/)
+[Demo]()
 
 #### Getting Started
 Clone repo and open index.html with your favorite browser.
