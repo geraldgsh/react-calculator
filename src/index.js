@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import PropTypes from 'prop-types';
 import './index.css';
+import App from './components/App';
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root'),
 );
