@@ -17,4 +17,9 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
+Button.defaultProps = {
+  half: false,
+  color: 'orange',
+};
+
 export default Button;
