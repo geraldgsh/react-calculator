@@ -19,3 +19,23 @@
   padding: 0 30px 10px 30px;
   text-align: right;
 }
+
+.buttonpanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonpanel > div {
+  height: 100px;
+}
+
+.buttonpanel > div > button {
+  border: darkgray 1px solid;
+  font-size: xx-large;
+  height: 100px;
+  width: 25%;
+}
+
+.buttonpanel > div > .buttons:hover {
+  border: blue 1px solid;
+}
