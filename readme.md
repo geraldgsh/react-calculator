@@ -20,6 +20,7 @@ The original version of this content can be found and edited [here](https://gith
 * npm
 * CSS
 * ES6
+* Webpack
 
 ### Project Objectives
 
