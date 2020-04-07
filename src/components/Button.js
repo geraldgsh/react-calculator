@@ -5,8 +5,8 @@ const Button = props => {
   const { name, color, half } = props;
   const styling = {
     width: half ? '50%' : '25%',
-    background: color
-  }
+    background: color,
+  };
   return (
     <button className="buttons" type="button" style={styling}>
       {name}
@@ -15,6 +15,8 @@ const Button = props => {
 };
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  half: false,
+  color: 'orange',
 };
 
 Button.defaultProps = {
