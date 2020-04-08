@@ -9,6 +9,9 @@ const calculate = (props, buttonName) => {
     next = null;
     operation = null;
   }
+  if (buttonName === '%') {
+    next = 0.01 * total;
+  }
   return { total, next, operation };
 };
 
