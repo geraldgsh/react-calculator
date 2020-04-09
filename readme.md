@@ -192,8 +192,9 @@ Install ESlint with following command
 ### To begin
 
 1. Clone Repo
-2. `yarn start` on terminal
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. 'npm install' to install dependencies
+3. `yarn start` or 'npm start' on terminal
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Wiki
 
