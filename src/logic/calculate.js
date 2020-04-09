@@ -20,7 +20,14 @@ const calculate = (props, buttonName) => {
       next = null;
       operation = null;
     }
-  }  
+  }
+  if (['+', '-', 'x', '÷', '%'].includes(buttonName)) {
+    operation = buttonName;
+  } else if (operation) {
+    total += buttonName;
+  } else {
+    next += buttonName;
+  }
   return { total, next, operation };
 };
 
