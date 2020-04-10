@@ -1,34 +1,19 @@
-import operate from './operate';
+import Big from 'big-js';
 
-const calculate = (props, buttonName) => {
-  let { total, next, operation } = props;
-  if (buttonName === 'A/C') {
-    total = null;
-    next = null;
-    operation = null;
+const operate = (numberOne, numberTwo, operation) => {
+  const [one, two] = [Big(numberOne), Big(numberTwo)];
+  switch (operation) {
+    case '+':
+      return one.plus(two).toString();
+    case '-':
+      return one.minus(two).toString();
+    case 'X':
+      return one.times(two).toString();
+    case '÷':
+      return one.div(two).toString();
+    default:
+      return '0';
   }
-  if (buttonName === '+/-') {
-    if (total) total *= -1;
-    if (next) next *= -1;
-  }
-  if (buttonName === '%') {
-    if (total) next = 0.01 * total;
-  }
-  if (buttonName === '=') {
-    if (total && next) {
-      total = operate(total, next, operation);
-      next = null;
-      operation = null;
-    }
-  }
-  if (['+', '-', 'x', '÷', '%'].includes(buttonName)) {
-    operation = buttonName;
-  } else if (operation) {
-    total += buttonName;
-  } else {
-    next += buttonName;
-  }
-  return { total, next, operation };
 };
 
-export default calculate;
+export default operate;

@@ -8,11 +8,11 @@ const Button = props => {
     background: color,
   };
   return (
-    <button 
-    className="buttons" 
-    type="button" 
-    style={styling} 
-    onClick={() => clickHandler(name)}>
+    <button
+      className = "buttons"
+      type="button"
+      style={styling}
+      onClick={() => clickHandler(name)}>
       {name}
     </button>
   );
@@ -21,7 +21,7 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   half: false,
   color: 'orange',
-  clickHandler: PropTypes.func.isRequired
+  clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
