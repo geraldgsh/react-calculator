@@ -1,3 +1,4 @@
+/* eslint-disable react/no-access-state-in-setstate */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -10,10 +11,11 @@ export default class Application extends React.Component {
     this.state = {
       total: null,
       next: null,
-      operation: null
+      operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick(buttonName) {
     this.setState(calculate(this.state, buttonName));
   }
