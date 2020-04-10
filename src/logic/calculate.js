@@ -28,9 +28,9 @@ const calculate = (props, buttonName) => {
     next = next ? next + buttonName : buttonName;
   } else if (nums.includes(buttonName)) {
     total = total ? total + buttonName : buttonName;
-  } else if (!next && !operation && buttonName ==='.') {
+  } else if (!next && !operation && buttonName === '.') {
     total = total.includes(buttonName) ? total : total + buttonName;
-  } else if (total && operation && buttonName ==='.') {
+  } else if (total && operation && buttonName === '.') {
     next = next.includes(buttonName) ? next : next + buttonName;
   }
   return { total, next, operation };
