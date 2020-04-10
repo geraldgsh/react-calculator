@@ -1,6 +1,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import Button from './Button';
+import PropTypes from 'prop-types';
 
 const ButtonPanel = ({ clickHandler }) => {
   const Gray = '#e0e0e0';
@@ -37,6 +38,10 @@ const ButtonPanel = ({ clickHandler }) => {
       </div>
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
