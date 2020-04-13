@@ -189,6 +189,11 @@ Install ESlint with following command
 
 4. Stickler does not work and nothing helps 💥 - run eslint in your local env and correct all errors. **Remember to let your Code Reviewer know that you had problems with Stickler and you used linter in local env.**
 
+### Futhure enhancement
+
+1. Add scientific calculation feature
+2. Add "backspace" button feature
+
 ### To begin
 
 1. Clone Repo
