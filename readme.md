@@ -4,7 +4,7 @@ React
 
 ### Snapshot
 
-![]()
+![](https://github.com/geraldgsh/react-calculator/blob/development/src/media/calculator.jpg)
 
 ### Introduction.
 In this project you will learn how to build a very simple React application. You will work in a real-world project for a fictional company that requires your help. The project has been split into multiple milestones, and each milestone has functional and technical requirements that you will need to implement.
@@ -177,7 +177,7 @@ Install ESlint with following command
 
    - Make sure that Stickler app has permission to access your repository. Find Stickler here https://github.com/settings/installations and check its configuration.
 
-   ![screenshot](../assets/images/stickler_app_config.png)
+   ![screenshot](https://github.com/microverseinc/linters-config/blob/master/assets/images/stickler_app_config.png)
 
    - Try to add a new commit to your Pull Request. Stickler should detect changes in your repo and start checking your code.
 
